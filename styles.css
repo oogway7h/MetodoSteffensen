@@ -1,0 +1,70 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #6dc8e1;
+
+}
+
+#Imagendesteffensen{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #e0f0ff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 90px;
+}
+
+#imagensteffensen{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007acc;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #0d1922;     
+}
+
+#funcion {
+    width: 100%;
+    max-width: 600px;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #007acc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+#teclado-mate {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#teclado-mate button {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#teclado-mate button:hover {
+    background-color: #e0e0e0;
+}
+
+#teclado-mate button:active {
+    background-color: #d0d0d0;
+    transform: scale(0.97);
+}

@@ -1,0 +1,39 @@
+video de referencia https://www.youtube.com/watch?v=FVjUNK9pTUA 
+Función: Math.cos(x) - x
+Decripción: 
+cos⁡(𝑥)−𝑥=0
+Valor inicial: 0.5
+Raíz esperada: ≈ 0.73908513
+
+Función: Math.exp(-x) - x
+Descripción: (𝑒^−𝑥)−𝑥=0
+Valor inicial: 0.5
+Raíz esperada: ≈ 0.56714329
+
+Función: Math.pow(x, 3) - x - 2
+descripción: 𝑥^3 −𝑥−2=0
+Valor inicial: 1.5
+Raíz esperada: ≈ 1.76929235
+
+Función: Math.log(x) + x * x - 3
+Descripción: ln⁡(𝑥)+𝑥^2 −3=0
+Valor inicial: 1
+Raíz esperada: ≈ 1.21341166
+
+Función: Math.sin(x) - 0.5
+Descripción: sin⁡(𝑥)−0.5=0
+Valor inicial: 0.5
+Raíz esperada: ≈ 0.52359878 (π/6)
+
+Función: Math.sqrt(x + 1) - Math.cos(x)
+Descripción: √𝑥+1=cos(𝑥)
+Valor inicial: 0
+Raíz esperada: ≈ 0.618
+
+
+funcion: Math.pow(x,3)+4*Math.pow(x,2)-10
+descripcion: x^3 +4*x^2 -10
+raiz esperada:1.365230013414100 o algo asi jdkadk
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Método de Steffensen</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Método de Steffensen Metodos numéricos</h1>
+
+    <div id="Imagendesteffensen">
+        <img src="src/Steffensen.jpg" alt="imagen" id="imagensteffensen">
+    </div>
+
+    <label for="funcion">Funcion f(x):</label>
+    <input type="text" id="funcion" value=""><br><br>
+
+    <script>
+    window.onload = function () {
+        document.getElementById("funcion").focus();
+    };
+</script>
+
+    <!--teclado-->
+<div id="teclado-mate">
+    <button onclick="insertar('Math.sqrt(')">√</button>
+    <button onclick="insertar('Math.cbrt(')">3√</button>
+    <button onclick="insertar('Math.pow(x,')">x^</button>
+    <button onclick="insertar('Math.exp(')">e^</button>
+    <button onclick="insertar('Math.log(')">ln</button>
+    <button onclick="insertar('Math.sin(')">sin</button>
+    <button onclick="insertar('Math.cos(')">cos</button>
+    <button onclick="insertar('Math.tan(')">tan</button>
+    <button onclick="insertar('Math.PI')">π</button>
+    <button onclick="insertar('x')">x</button>
+    <button onclick="borrar()">←</button>
+</div>
+<script src="teclado.js"></script>
+<div>
+     <p>Inserta preferencias    </p>                   
+</div>
+    <button onclick="sugerirInicial()">Sugerir valor inciañ</button><br><br>
+
+    <label for="x0">Valor inicial (x₀):</label>
+    <input type="number" id="x0" step="any" value="0.5"><br><br>
+
+    <label for="tolerancia">Tolerancia:</label>
+    <input type="number" id="tolerancia" step="any" value="0"><br><br>
+
+    <label for="maxIter">Iteraciones máximas:</label>
+    <input type="number" id="maxIter" value="5"><br><br>
+
+    <button onclick="resolver()">Calcular</button>
+
+    <h2>Resultado:</h2>
+    <pre id="resultado"></pre>
+
+    <script src="sugerirVI.js"></script>
+    <script src="steffensen.js"> </script>
+
+</body>
+</html>
