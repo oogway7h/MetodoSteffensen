@@ -7,13 +7,13 @@
 
 </head>
 <body>
-    <h1>Método de Steffensen Metodos numéricos</h1>
+    <h1>Método de Steffensen</h1>
 
     <div id="Imagendesteffensen">
         <img src="src/Steffensen.jpg" alt="imagen" id="imagensteffensen">
     </div>
 
-    <label for="funcion">Funcion f(x):</label>
+    <label for="funcion" class="etiqueta">Funcion f(x):</label><br><br>
     <input type="text" id="funcion" value=""><br><br>
 
     <script>
@@ -34,27 +34,55 @@
     <button onclick="insertar('Math.tan(')">tan</button>
     <button onclick="insertar('Math.PI')">π</button>
     <button onclick="insertar('x')">x</button>
+    <button onclick="insertar('+')">+</button>
+    <button onclick="insertar('*')">*</button>
+    <button onclick="insertar('/')">/</button>
+    <button onclick="insertar('1')">1</button>
+    <button onclick="insertar('2')">2</button>
+    <button onclick="insertar('3')">3</button>
+    <button onclick="insertar('4')">4</button>
+    <button onclick="insertar('5')">5</button>
+    <button onclick="insertar('6')">6</button>
+    <button onclick="insertar('7')">7</button>
+    <button onclick="insertar('8')">8</button>
+    <button onclick="insertar('9')">9</button>
+    <button onclick="insertar('0')">0</button>
     <button onclick="borrar()">←</button>
 </div>
 <script src="teclado.js"></script>
-<div>
-     <p>Inserta preferencias    </p>                   
+
+<div id="valorinicial">
+        <button onclick="sugerirInicial()">Sugerir valor incial</button><br><br>
 </div>
-    <button onclick="sugerirInicial()">Sugerir valor inciañ</button><br><br>
 
-    <label for="x0">Valor inicial (x₀):</label>
-    <input type="number" id="x0" step="any" value="0.5"><br><br>
+<!--<div class="etiqueta">
+     <p>Inserta preferencias    </p>                   
+1
+</div>-->
 
-    <label for="tolerancia">Tolerancia:</label>
-    <input type="number" id="tolerancia" step="any" value="0"><br><br>
 
-    <label for="maxIter">Iteraciones máximas:</label>
-    <input type="number" id="maxIter" value="5"><br><br>
 
-    <button onclick="resolver()">Calcular</button>
+    <div class="contenedor">
+        <label for="x0" class="etiqueta">Valor inicial (x₀):</label>
+        <input type="number" id="x0" step="any" value="0.5"><br><br>
+    </div>
+
+    <div class="contenedor">
+        <label for="tolerancia" class="etiqueta">Tolerancia:</label>
+        <input type="number" id="tolerancia" step="0.000001" value="0.000001"><br><br>
+    </div>
+
+    <div class="contenedor">
+        <label for="maxIter" class="etiqueta">Iteraciones máximas:</label>
+        <input type="number" id="maxIter" value="5"><br><br>
+    </div>
+
+    <div id="calcular">
+        <button onclick="resolver()">Calcular</button>
+    </div>
 
     <h2>Resultado:</h2>
-    <pre id="resultado"></pre>
+    <pre id="resultado" class="result"></pre>
 
     <script src="sugerirVI.js"></script>
     <script src="steffensen.js"> </script>

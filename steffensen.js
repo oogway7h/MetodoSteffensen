@@ -9,7 +9,7 @@ function resolver() {
                 try {
                     return eval(funcion);
                 } catch (e) {
-                    resultado.textContent = "Error en la funcinn.";
+                    resultado.textContent = "Error en la funcion.";
                     return NaN;
                 }
             };
@@ -22,7 +22,7 @@ function resolver() {
                 let denominador = fx2 - fx;
 
                 if (denominador === 0) {
-                    resultado.textContent = "Division por cero detectada.";
+                    resultado.textContent = "division por cero detectada.";
                     return;
                 }
 
@@ -30,12 +30,12 @@ function resolver() {
                 iteraciones.push(`Iteracion ${i + 1}: x = ${x1}`);
 
                 if (Math.abs(x1 - x) < tol) {
-                    resultado.textContent = iteraciones.join("\n") + `\n\nRaiz aproximada: ${x1}`;
+                    resultado.textContent = iteraciones.join("\n") + `\n\nraiz aproximada: ${x1}`;
                     return;
                 }
 
                 x = x1;
             }
 
-            resultado.textContent = iteraciones.join("\n") + "\n\nNo se alcanzo la tolerancia en el numero maximo de iteraciones.";
+            resultado.textContent = iteraciones.join("\n") + "\n\nno se alcanzo la tolerancia en el numero maximo de iteraciones.";
         }

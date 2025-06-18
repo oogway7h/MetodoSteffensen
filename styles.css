@@ -1,9 +1,15 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:Lucida Console;
     padding: 20px;
-    background-color: #6dc8e1;
-
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(src/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #Imagendesteffensen{
@@ -19,16 +25,18 @@ body {
 }
 
 #imagensteffensen{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #007acc;
+    border: 2px solid red;
 }
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
     color: #0d1922;     
+    background-color: #e0f0ff;
+    border-radius: 6px;
 }
 
 #funcion {
@@ -53,18 +61,104 @@ h1 {
 #teclado-mate button {
     padding: 10px 16px;
     font-size: 16px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    background-color: #e0f0ff;
+    border: 1px solid #070606;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
 }
 
 #teclado-mate button:hover {
-    background-color: #e0e0e0;
+    background-color: #af7777;
 }
 
 #teclado-mate button:active {
     background-color: #d0d0d0;
     transform: scale(0.97);
 }
+
+
+#valorinicial button:hover{
+    background-color: #af7777; ;
+}
+
+
+#valorinicial button {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #070606;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#calcular button {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #070606;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#calcular button:hover{
+    background-color: #af7777;
+}
+
+
+#x0{
+    border-radius: 6px;
+    font-size: 18px;
+    max-width: 70px;   
+    border-color: #007acc;
+}
+
+#tolerancia{
+    border-radius: 6px;
+    font-size: 18px;
+    max-width: 90px;   
+    border-color: #007acc;
+}
+
+#maxIter{
+    border-radius: 6px;
+    font-size: 18px;
+    max-width: 50px;   
+    border-color: #007acc;
+}
+
+.etiqueta {
+    background-color: #e0f0ff;
+    background-size: cover;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+h2{
+    background-color: #e0f0ff;
+    border-radius: 6px;
+}
+
+.result{
+    background-color: #e0f0ff;
+    font-size: 18px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .contenedor label {
+    width: 160px;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .contenedor input {
+    flex: 1; 
+  }
